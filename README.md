@@ -71,7 +71,7 @@ b. Compare and contrast calling `dansRoll` the first and second time. What is al
 Will always reutun only one roll each time it is invoked, The second function could be used to store each roll
 and return an array listing every roll of the dice. 
 c. What is the lexical scope of `newRoll`?
-the lexical scope of newRoll is within the return function of the personalDice function, it operates like so;
+the lexical scope of newRoll is within the return function of the personalDice function, it operates like so:
 <!-- return function(){
       //* generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
