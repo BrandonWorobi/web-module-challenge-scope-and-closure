@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+a Closure is muiltuple functions grouped together with refrences to its whole state within the lexical enviroment, It gives the ablity to control functions from the outside;
+for example, The ablity to use bluetooth to change the song that is playing inside the house while you are outside. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The closure is the newroll variable deifined within the return function of the personalDice function. 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+Will always reutun only one roll each time it is invoked, The second function could be used to store each roll
+and return an array listing every roll of the dice. 
+c. What is the lexical scope of `newRoll`?
+the lexical scope of newRoll is within the return function of the personalDice function, it operates like so;
+<!-- return function(){
+      //* generate random number between 1 and 6
+    const newRoll = Math.floor(Math.random() * 6);
+    console.log(`${name} rolled a ${newRoll}`) -->
 
 
 ### Task 3 - Stretch Goals
